@@ -33,15 +33,19 @@ class BaseAnchorViewController: BaseViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.backgroundColor = UIColor.white
-        collectionView.register(UINib(nibName:"CollectionViewNormalCell", bundle: nil), forCellWithReuserIdentifier:kNormalCellID)
+        collectionView.register(UINib(nibName: "CollectionViewNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
         collectionView.register(UINib(nibName: "CollectionViewPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //设置UI界面
+        self.setUI()()
+        //请求数据
+        self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,15 +53,54 @@ class BaseAnchorViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension BaseAnchorViewController{
+    override func setUI() {
+        self.baseContentView = collectionView
+        self.view.addSubview(collectionView)
+        super.setUI()
+    }
+}
+
+// MARK: -请求数据
+extension BaseAnchorViewController{
+    func loadData() {
+        
+    }
+}
+
+// MARK: -collectionViewDelagate&&DataSource
+extension BaseAnchorViewController : UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return self.baseVM.anchorGroups.count
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let group = self.baseVM.anchorGroups[section]
+        return group.anchors.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionViewNormalCell
+        let anchor = self.baseVM.anchorGroups[(indexPath as NSIndexPath).section].anchors[(indexPath as NSIndexPath).item]
+        cell.anchor = anchor
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableCell(withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        let group = self.baseVM.anchorGroups[(indexPath as NSIndexPath).section]
+        headerView.group = group
+        return headerView
+    }
+}
+extension BaseAnchorViewController : UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let  anchor = self.baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        anchor.isVertical == 0 ? pushNod
+    }
+    func pushNormalRoomVC(_ anchor : AnchorModel) {
+        //创建normalRoomVC
+        let normarlRoomVC = RoomNormal
+    }
+}
+
+

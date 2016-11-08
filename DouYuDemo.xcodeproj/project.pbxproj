@@ -14,8 +14,6 @@
 		1C56C9DA1DC1A82A007680AB /* DouYuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56C9D91DC1A82A007680AB /* DouYuDemoTests.swift */; };
 		1C56C9E51DC1A82A007680AB /* DouYuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56C9E41DC1A82A007680AB /* DouYuDemoUITests.swift */; };
 		1C56C9FD1DC1ABA8007680AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56C9FC1DC1ABA8007680AB /* MainViewController.swift */; };
-		1C56C9FF1DC1ACF0007680AB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C56C9FE1DC1ACF0007680AB /* Home.storyboard */; };
-		1C56CA011DC1AD00007680AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56CA001DC1AD00007680AB /* HomeViewController.swift */; };
 		1C56CA031DC1AD13007680AB /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C56CA021DC1AD13007680AB /* Live.storyboard */; };
 		1C56CA051DC1AD1D007680AB /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C56CA041DC1AD1D007680AB /* LiveViewController.swift */; };
 		1C56CA071DC1AD31007680AB /* Fellow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C56CA061DC1AD31007680AB /* Fellow.storyboard */; };
@@ -34,6 +32,12 @@
 		1C60592B1DC3279A00CA2564 /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6059291DC3279A00CA2564 /* CollectionViewNormalCell.xib */; };
 		1C60592E1DC32D4900CA2564 /* CollectionViewPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60592C1DC32D4900CA2564 /* CollectionViewPrettyCell.swift */; };
 		1C60592F1DC32D4900CA2564 /* CollectionViewPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C60592D1DC32D4900CA2564 /* CollectionViewPrettyCell.xib */; };
+		1C6F83731DD1D69D00FF5BB7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F83701DD1D69D00FF5BB7 /* Home.storyboard */; };
+		1C6F83741DD1D69D00FF5BB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F83711DD1D69D00FF5BB7 /* HomeViewController.swift */; };
+		1C6F83771DD1D6E300FF5BB7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F83751DD1D6E300FF5BB7 /* CollectionHeaderView.swift */; };
+		1C6F83781DD1D6E300FF5BB7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6F83761DD1D6E300FF5BB7 /* CollectionHeaderView.xib */; };
+		1C6F837E1DD1DE3600FF5BB7 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F837D1DD1DE3600FF5BB7 /* RoomNormalViewController.swift */; };
+		1C6F83801DD1DE4400FF5BB7 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F837F1DD1DE4400FF5BB7 /* RoomShowViewController.swift */; };
 		1C71AD681DC2EE8E00B9DBA6 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71AD671DC2EE8E00B9DBA6 /* NetworkTools.swift */; };
 		3B2013DBF554C5FD0156F01E /* Pods_DouYuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4569DB2775069F1BD76CB0BF /* Pods_DouYuDemo.framework */; };
 /* End PBXBuildFile section */
@@ -69,8 +73,6 @@
 		1C56C9E41DC1A82A007680AB /* DouYuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuDemoUITests.swift; sourceTree = "<group>"; };
 		1C56C9E61DC1A82A007680AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C56C9FC1DC1ABA8007680AB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		1C56C9FE1DC1ACF0007680AB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		1C56CA001DC1AD00007680AB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C56CA021DC1AD13007680AB /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		1C56CA041DC1AD1D007680AB /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		1C56CA061DC1AD31007680AB /* Fellow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Fellow.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,12 @@
 		1C6059291DC3279A00CA2564 /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
 		1C60592C1DC32D4900CA2564 /* CollectionViewPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPrettyCell.swift; sourceTree = "<group>"; };
 		1C60592D1DC32D4900CA2564 /* CollectionViewPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewPrettyCell.xib; sourceTree = "<group>"; };
+		1C6F83701DD1D69D00FF5BB7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1C6F83711DD1D69D00FF5BB7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1C6F83751DD1D6E300FF5BB7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		1C6F83761DD1D6E300FF5BB7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		1C6F837D1DD1DE3600FF5BB7 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		1C6F837F1DD1DE4400FF5BB7 /* RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		1C71AD671DC2EE8E00B9DBA6 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		4569DB2775069F1BD76CB0BF /* Pods_DouYuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0EA695C1368C959381D15A /* Pods-DouYuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuDemo/Pods-DouYuDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,8 +207,10 @@
 		1C56C9F31DC1AB7F007680AB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1C56C9FE1DC1ACF0007680AB /* Home.storyboard */,
-				1C56CA001DC1AD00007680AB /* HomeViewController.swift */,
+				1C6F836D1DD1D69D00FF5BB7 /* Model */,
+				1C6F836E1DD1D69D00FF5BB7 /* View */,
+				1C6F836F1DD1D69D00FF5BB7 /* ViewController */,
+				1C6F83721DD1D69D00FF5BB7 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -278,6 +288,10 @@
 		1C56C9FB1DC1AB7F007680AB /* Room */ = {
 			isa = PBXGroup;
 			children = (
+				1C6F83791DD1DE0E00FF5BB7 /* Model */,
+				1C6F837A1DD1DE0E00FF5BB7 /* View */,
+				1C6F837B1DD1DE0E00FF5BB7 /* ViewController */,
+				1C6F837C1DD1DE0E00FF5BB7 /* ViewModel */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -289,6 +303,68 @@
 				1C71AD671DC2EE8E00B9DBA6 /* NetworkTools.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		1C6F836D1DD1D69D00FF5BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C6F836E1DD1D69D00FF5BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C6F83751DD1D6E300FF5BB7 /* CollectionHeaderView.swift */,
+				1C6F83761DD1D6E300FF5BB7 /* CollectionHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C6F836F1DD1D69D00FF5BB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C6F83701DD1D69D00FF5BB7 /* Home.storyboard */,
+				1C6F83711DD1D69D00FF5BB7 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C6F83721DD1D69D00FF5BB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C6F83791DD1DE0E00FF5BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C6F837A1DD1DE0E00FF5BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C6F837B1DD1DE0E00FF5BB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C6F837D1DD1DE3600FF5BB7 /* RoomNormalViewController.swift */,
+				1C6F837F1DD1DE4400FF5BB7 /* RoomShowViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C6F837C1DD1DE0E00FF5BB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B2F5376331D1D9989848C6CD /* Pods */ = {
@@ -413,10 +489,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C56C9FF1DC1ACF0007680AB /* Home.storyboard in Resources */,
 				1C60592F1DC32D4900CA2564 /* CollectionViewPrettyCell.xib in Resources */,
 				1C56CA0D1DC1AD59007680AB /* Profile.storyboard in Resources */,
 				1C56C9CF1DC1A82A007680AB /* LaunchScreen.storyboard in Resources */,
+				1C6F83781DD1D6E300FF5BB7 /* CollectionHeaderView.xib in Resources */,
+				1C6F83731DD1D69D00FF5BB7 /* Home.storyboard in Resources */,
 				1C56CA071DC1AD31007680AB /* Fellow.storyboard in Resources */,
 				1C56C9CC1DC1A82A007680AB /* Assets.xcassets in Resources */,
 				1C56CA031DC1AD13007680AB /* Live.storyboard in Resources */,
@@ -497,17 +574,20 @@
 				1C6059231DC3204000CA2564 /* CollectionBaseCell.swift in Sources */,
 				1C71AD681DC2EE8E00B9DBA6 /* NetworkTools.swift in Sources */,
 				1C56CA1A1DC20373007680AB /* AnchorGroup.swift in Sources */,
+				1C6F83741DD1D69D00FF5BB7 /* HomeViewController.swift in Sources */,
 				1C56C9FD1DC1ABA8007680AB /* MainViewController.swift in Sources */,
 				1C56CA161DC1FE06007680AB /* BaseViewModel.swift in Sources */,
 				1C56C9C51DC1A82A007680AB /* AppDelegate.swift in Sources */,
 				1C56CA181DC2009A007680AB /* BaseGameModel.swift in Sources */,
-				1C56CA011DC1AD00007680AB /* HomeViewController.swift in Sources */,
 				1C56CA0B1DC1AD4C007680AB /* ProfileViewController.swift in Sources */,
+				1C6F83771DD1D6E300FF5BB7 /* CollectionHeaderView.swift in Sources */,
 				1C6059251DC3272D00CA2564 /* CollectionViewNormalCell.swift in Sources */,
 				1C56CA141DC1FD56007680AB /* Common.swift in Sources */,
+				1C6F837E1DD1DE3600FF5BB7 /* RoomNormalViewController.swift in Sources */,
 				1C56CA051DC1AD1D007680AB /* LiveViewController.swift in Sources */,
 				1C56CA0F1DC1B204007680AB /* BaseViewController.swift in Sources */,
 				1C56CA1C1DC2095C007680AB /* AnchorModel.swift in Sources */,
+				1C6F83801DD1DE4400FF5BB7 /* RoomShowViewController.swift in Sources */,
 				1C60592E1DC32D4900CA2564 /* CollectionViewPrettyCell.swift in Sources */,
 				1C56CA111DC1FCE4007680AB /* BaseAnchorViewController.swift in Sources */,
 				1C56CA091DC1AD3D007680AB /* FellowViewController.swift in Sources */,
